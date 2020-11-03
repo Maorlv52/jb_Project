@@ -1,4 +1,4 @@
-# Jhon-Bryce Final Project
+# Jhon-Bryce Final Project - Maor levinshtein
 
 ## Two folders are attached to this file:
 • First folder “Maor_WebSite_Project”, contains the HTML files and site content,
