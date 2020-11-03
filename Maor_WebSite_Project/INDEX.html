@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vulcan650s</title>
+		<style type="text/css">
+			#bodyId{
+				color: black;
+				background-image: url('images/bike.jpg') ; background-repeat: no-repeat; background-size: cover;
+				font-family: Arial;
+			}
+			
+			/* HEADLINE FOR THE PAGE --------------------------*/
+			.headline{
+				background-color: black;
+				height: 70px;
+				top: 0px;
+				color: white;
+				font-size: x-large;
+			}
+			/* THE FRONT FORM --------------------------*/
+			.order{
+				float: left;
+			}
+			/* THE IMAGE div --------------------------*/
+			.Picdiv{
+				width: 350px;
+				height: 235px;
+				background-color: #003c02;
+				position: absolute;
+				top: 420px;
+				left: 1px;
+			}
+			.box img{
+				width: 100px;
+				height: 100px;
+				float: left;
+				margin: 5px 0 0 5px;
+				position: relative;
+			}
+			.box{
+				background-color: black;
+				width: 110px;
+				height: 110px;
+				float: left;
+				position: relative;
+				margin: 5px 0 0 5px;
+			}
+			.box:hover img{
+				width: 500px;
+				height: 300px;
+				position: absolute;
+				z-index: 1;
+				border: 5px solid green;
+			}
+			/* A FEW WORDS AHEAD --------------------------*/
+			.content{
+				background-color:#000000;
+				color:#1bd312;	
+				font-size: small;	
+				float: left;
+                position: absolute;
+				left: 400px;
+				text-align: center;
+				width: 500px;
+			}
+			.content2{
+				background-color:#000000;
+				color:#1bd312;
+				font-size: small;
+				float: left;
+				position: absolute;
+				left: 400px;
+				top: 230px;
+				text-align: center;
+				width: 500px;
+			}
+			/* SELECTION MENU BAR --------------------------*/
+			.menu {
+				background-color:black;
+				position: absolute;
+				right:  20px;
+				font-size: small;
+				color: #1bd312;
+				border: #ffffff;
+				text-align: center;
+			}
+			.button{
+				line-height: 50px;
+				border: 2px solid black;
+				background-image: url('6.jpg');
+			}
+			.button:hover{
+				width: 200px;
+				height: 100px;
+				border: 5px solid vlue;
+			}
+			/* CHANGE BACKGROUND PICTURE --------------------------*/
+			.backpic{
+				background-color:#000000;
+				color:#1bd312;
+				font-size: small;
+				float: left;
+				position: absolute;
+				left: 780px;
+				bottom: 5px;
+				text-align: center;
+				width: 120px;
+			}
+			.backpic2{
+				background-color:#000000;
+				color:#1bd312;
+				font-size: small;
+				float: left;
+				position: absolute;
+				left: 900px;
+				bottom: 5px;
+				text-align: center;
+				width: 120px;
+			}
+			#rights{
+				color:white;
+				font-size: small;
+				float: left;
+				position: absolute;
+				left: 5px;
+				font-style: italic;
+				font-family: Arial;
+				text-align:left: ;
+				width: 20;
+				bottom: 0px
+			}
+		</style>
+		<script>
+		/*	alert("1920 x 1080 resolotion is recomende");  */
+			function mouseOver(){
+				document.getElementsByClassName("button").style.color="#1bd312";
+			}
+			
+			function changeBackground(){
+				document.getElementById("bodyId").style.backgroundImage = "url('images/backpic.jpg')";
+			}
+			
+			function changeBackground2(){
+				document.getElementById("bodyId").style.backgroundImage = "url('images/bike.jpg')";
+			}
+			
+			function mouseOver(){
+				document.getElementById("TestRide").style.color="#1bd312";
+			}
+			
+		</script>
+	</head>
+	<body id="bodyId" bgcolor="black">
+		<div class="headline"><h1 style="font-size: 50 ; text-align: center ; text-decoration: underline">THE NEW KAWASAKI <span style="color: #1bd312">VULCAN 650s</span></h1></div>
+		<hr style="color: black">
+		<div class="order">
+		
+			<form method="post" name="maor's form" action="pages/order.html">
+			
+				<h1 id="TestRide" 
+				onmouseover="mouseOver()"
+			    onmouseout="document.getElementById('TestRide').style.color='black'"><b><u><abbr title="Limited time to order!!!">ORDER A TEST RIDE!</abbr></u></b></h1>
+				
+				
+		<table border="1" cellspacing="5">
+		<tr>
+			<td>
+				<b>First name:</b>:</td>
+			<td><input type="text" name="F_N" maxlength="26"/></td>
+		</tr>
+		<!-- look at this beautifull table!!!-->
+		<tr>
+			<td>
+				<b>Last name:</b></td>
+			<td><input type="text" name="L_N" maxlength="26"/></td>
+		</tr>
+		<tr>
+			<td>
+				<b>Country:</b></td>
+			<td>
+				<select name="Country">
+					<option value="isr" selected="selected">Israel</option>
+					<option value="usa">United states</option>
+					<option value="can">Canada</option>
+				</select>
+				</td>
+		</tr>
+		<tr>
+					<td>
+						<b>Email:</b></td>
+					<td><input type="email" name="Mail" maxlength="26"/></td>
+		</tr>
+		<tr>
+				<td><B>Phone:</B></td>
+				<td>
+					<select name="areaCode">
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="052" selected="selected">052</option>
+						<option value="053">053</option>
+						<option value="054">054</option>
+						<option value="058">058</option>
+					</select>
+					<input type="text" name="Phone" maxlength="10" size="12"/>
+				</td>
+	    </tr>
+		<tr>
+			<td colspan="2" align="center">
+						<input type="submit" name="SEND" value="ORDER NOW!" align="bottom"/>
+			</td>
+		</tr>
+		</table>
+		</form>
+		</div>
+		<div class="Picdiv" background-color: #000000">
+			<div class="box"> <img src="images/1.jpg"/> </div>
+			<div class="box"> <img src="images/2.jpg"/> </div>
+			<div class="box"> <img src="images/3.jpg"/> </div>
+			<div style="clear:both;"></div>
+			<div class="box"> <img src="images/4.jpg"/> </div>
+			<div class="box"> <img src="images/5.jpg"/> </div>
+			<div class="box"> <img src="images/6.jpg"/> </div>
+		</div>
+		<div class="content">
+		<p>Unlike any other cruiser, the Vulcan® S is geared to fit a wide <br>
+				range of riders with its exclusive ERGO-FIT® sizing system that includes<br>
+				18 possible configurations. Never taking away from its vintage styling, <br>
+				this cruiser takes comfort, adjustability, Ninja®-derived power and performance<br>
+				 to the next level.</p>
+		</div>
+		<div class="content2">
+			<p>649cc PARALLEL-TWIN ENGINE
+				SPORTBIKE-DERIVED CHASSIS AND SUSPENSION
+				FIND YOUR FIT WITH ERGO-FIT® TECHNOLOGY</p>
+		</div>
+		<div class="menu"
+			onmouseover="mouseOver()"
+			onmouseout="document.getElementsByClassName('menu').style.color='black'">
+			
+				<div class="button"><p><b><a href="Pages/specs.html">VIEW TECHNICAL SPECS</a></b></p></div>
+			<hr style="color:#1bd312 ">
+			    <div class="button"><p><b><a href="Pages/ABOUT.html">ABOUT US</a></b></p></div>
+			<hr style="color:#1bd312 ">
+			    <div class="button"><p><b><a href="Pages/MEMBERSHIP.html">GET MEMBERSHIP</a></b></p></div>
+			<hr style="color:#1bd312 ">
+			    <div class="button"><p><b><a href="https://www.kawasaki.com/motorcycle/vulcan/sport-cruiser/vulcan-s">KAWASAKI.COM</a></b></p></div>
+			<hr style="color:#1bd312 ">
+			    <div class="button"><p><b></b><a href="https://www.youtube.com/watch?v=qytkjr187c4">VULCAN 650s VIDEO</a></p></div>
+			<hr style="color:#1bd312 ">
+			    <div class="button"><p><b><a href="pages/CONTACT.html"> CONTACT US</a></b></p></div>
+			
+		</div>
+		<div class="backpic"><button onclick="changeBackground()">Change Background</button></div>
+		<div class="backpic2"> <button ondblclick="changeBackground2()">Change back (double click)</button></div>
+		
+		<h6 id="rights">ALL RIGHTS RESERVED TO MAOR LEVINSHTEIN&copy; <br>
+			MAIL: Maorlv52@gmail.com <br>
+			PHONE: +972544-837-295
+		</h6>
+	</body>
+</html>

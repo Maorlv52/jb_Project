@@ -1,0 +1,25 @@
+.mainpage{
+	background-color: black;
+	width: 180px;
+	text-align: center;
+	font-size: small;
+	color: #1bd312;
+}
+body{
+	color: white;
+	background-image: url('../Images/member2.jpeg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial;
+}
+table{
+	color: black;
+	background-color: #a9abb0;
+}
+.headline{
+	background-color: black;
+	height: 70px;
+	top: 0px;
+	color: white;
+	font-size: 50px;
+}
