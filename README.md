@@ -31,3 +31,4 @@ Function for calculating success rates from all tests (per browser).
 Between the quantity found and the quantity that should actually be.
 4. Presentation of all the variables of the CHROME run.
 5. Presentation of all the variables of the FIRE FOX run.
+ a change
